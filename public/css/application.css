@@ -1,9 +1,55 @@
+@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900');
+
 .container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  /*
+    If you have a block-level element of a certain width, margin: 0 auto;
+    will how you center it inside its parent container.
+ 
+    See: http://bluerobot.com/web/css/center1.html
+    
+    Don't change the container width.
+  */
+  margin: 0 auto;  
+  width: 480px;
 }
-th {
-  text-align: left;
+ 
+h1 {
+  line-height: 1.1em;
+  color: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid gray;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-bottom: 1.5em;
+  color: #444;
+}
+ 
+blockquote {
+  font-style: italic;
+  line-height: 1.5em;
+}
+.post_body {
+  padding: 0 0 30px 0;
+}
+.input {
+  margin: 10px;
+  clear: both;
+}
+.input textarea{
+  min-height: 500px;
+  width: 100%;
+}
+.input input{
+    width: 100%;
+}
+.small {
+  font-size: 12px;
+}
+.small a{
+  text-decoration: none;
+  color: #444;
 }

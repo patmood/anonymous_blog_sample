@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>Posts matching <%= @tag %></h1>
+  <% @posts.each do |post| %>
+    <h1><%= post.title %></h1>
+    <div class="post_body">
+      <p><%= parser(post.body) %></p>
+    </div>
+    <p class="small">Tags:&nbsp;
+      <% post.tags.map {|x| x.name}.each do |tag| %>
+        <a href="/tags/<%= tag%>" ><%= tag %></a>,&nbsp;
+      <% end %>
+
+    </p>
+    <p><a href=<%= "/posts/delete/#{post.id}" %>>Delete Post</a></p>
+    <p><a href=<%= "/posts/edit/#{post.id}" %>>Edit Post</a></p>
+  <% end %>
+  
+
+</div>
+
+
+
+

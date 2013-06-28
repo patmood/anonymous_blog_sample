@@ -21,3 +21,6 @@ group :test do
   gem 'faker'
   gem 'rspec'
 end
+
+#fancy bootstrap WYSIWYG editor
+gem 'bootstrap-wysihtml5-rails'

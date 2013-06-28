@@ -1,0 +1,21 @@
+<div class="container">
+  
+  <h1>New Post</h1>
+  <form method="post" action="/posts/update">
+    <input type="hidden" name="id" value="<%= @post.id %>">
+    <div class="input">
+      <input type="text" name="title" placeholder="Enter Your Post Title" value="<%= @post.title %>">
+    </div>
+    <div class="input">  
+      <textarea name="body" placeholder="Enter Your Post Body"><%= @post.body %></textarea>
+    </div>
+    <div class="input">
+      <input type="text" name="tags" placeholder="Tags" value="<%= @post.tags.map {|x| x.name}.join(", ") %>">
+      <p class="small">Enter tags separated by a comma, eg "nut recipes, windsurfing, coding"</p>
+    </div>
+    <div class="input">
+      <input type="submit" value="Update">
+    </div>  
+  </form>
+
+</div>
